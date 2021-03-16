@@ -1,16 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './_shared/header/header.component';
+import { FooterComponent } from './_shared/footer/footer.component';
+import { VideoItemComponent } from './home/video-item/video-item.component';
+import { VideoListComponent } from './home/video-list/video-list.component';
+import { VideoFeaturedComponent } from './home/video-featured/video-featured.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    VideoItemComponent,
+    VideoListComponent,
+    VideoFeaturedComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
