@@ -11,9 +11,11 @@ import { SearchListResponse } from 'src/app/_core/models/youtube-api-v3.models';
 })
 export class VideoService {
 
-  API_KEY = environment.googleApiKey;
+  //API_KEY = environment.googleApiKey;
+  API_KEY = process.env.GOOGLE_API_KEY;
   ROOT_URL = "https://youtube.googleapis.com/youtube/v3/search?part=snippet,id&order=date&maxResults=50"
   CHANNEL_ID = "UCY_5h5zaSwN7Or4kIJDYNXA";
+  
 
   constructor(private http: HttpClient) { }
 
