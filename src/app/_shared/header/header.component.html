@@ -1,13 +1,13 @@
 
-<div class="flex flex-grow bg-indigo-300 shadow-lg">
+<div class="fixed z-50 flex w-full px-48 shadow-lg bg-gradient-to-r from-blue-400 to-indigo-900">
     <div class="w-1/2 p-2">
-        <a class="hover:shadow-lg" href="#">
+        <a class="" href="#">
             <img class="h-10 w-30" src="assets/atp-logo.png">
         </a>
     </div>
-    <div id="todays-date" class="w-1/2 p-2 self-center text-right">
-        <span class="text-md text-gray-700">Latest ATP Tour videos</span>
-        <span class="mx-2 text-gray-500">|</span>
-        <span class="text-xs text-gray-500">{{ today_date | date: 'EEEE, MMMM d, y' }}</span>
+    <div class="w-1/2 p-2 self-center text-right">
+        <span class="text-lg text-gray-200">Latest ATP Tour videos</span>
+        <span class="mx-2 text-gray-300">|</span>
+        <span class="text-xs text-gray-300">{{ today_date | date: 'EEEE, MMMM d, y' }}</span>
     </div>
 </div>

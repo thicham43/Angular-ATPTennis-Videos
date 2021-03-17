@@ -4,8 +4,9 @@ import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { map, catchError } from 'rxjs/operators';
 import { SearchListResponse } from 'src/app/_core/models/youtube-api-v3.models';
+import { RESPONSE_DATA } from './fake-response-data';
 
-@Injectable({
+  @Injectable({
   providedIn: 'root'
 })
 export class VideoService {
@@ -13,6 +14,7 @@ export class VideoService {
   constructor(private http: HttpClient) { }
 
   fetchVideos(): Observable<Video[]> {
+    //return of(RESPONSE_DATA)
     return this.http.get<SearchListResponse>(`/.netlify/functions/getVideos-function`)
            .pipe(map((res) => res.items!.map((playlistItem) =>
                                 ({
