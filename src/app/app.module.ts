@@ -9,6 +9,7 @@ import { FooterComponent } from './_shared/footer/footer.component';
 import { VideoItemComponent } from './home/video-item/video-item.component';
 import { VideoListComponent } from './home/video-list/video-list.component';
 import { VideoFeaturedComponent } from './home/video-featured/video-featured.component';
+import { HomeBaseComponent } from './home/home-base/home-base.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { VideoFeaturedComponent } from './home/video-featured/video-featured.com
     FooterComponent,
     VideoItemComponent,
     VideoListComponent,
-    VideoFeaturedComponent
+    VideoFeaturedComponent,
+    HomeBaseComponent
   ],
   imports: [
     BrowserModule,

@@ -14,7 +14,7 @@ exports.handler = async () => {
   } catch(e) {
     return {
       statusCode: 500,
-      body: 'Error while getting data from YT',
+      body: 'Error while getting videos from Youtube channel',
     };
   }
 };
