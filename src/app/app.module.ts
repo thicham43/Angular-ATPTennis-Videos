@@ -10,6 +10,7 @@ import { VideoItemComponent } from './home/video-item/video-item.component';
 import { VideoListComponent } from './home/video-list/video-list.component';
 import { VideoFeaturedComponent } from './home/video-featured/video-featured.component';
 import { HomeBaseComponent } from './home/home-base/home-base.component';
+import { SafePipe } from './tools/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HomeBaseComponent } from './home/home-base/home-base.component';
     VideoItemComponent,
     VideoListComponent,
     VideoFeaturedComponent,
-    HomeBaseComponent
+    HomeBaseComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,

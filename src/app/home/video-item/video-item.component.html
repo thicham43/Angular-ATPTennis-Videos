@@ -6,7 +6,9 @@
     <div class="w-2/3">
         <div class="flex justify-between">
             <span class="font-semibold">{{ video?.title }}</span>
-            <span class="text-sm">{{ video?.publishedAt }}</span>
+            <span class="px-2 text-sm text-white bg-gray-700 rounded">
+                {{ video?.publishedAt | date:'MMMM dd, yyyy' }}
+            </span>
         </div>
         <div class="py-3">{{ video?.description }}</div>
         <a [href]="'https://www.youtube.com/watch?v='+video?.videoId" target="_blank"

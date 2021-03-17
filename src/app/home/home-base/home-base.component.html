@@ -1,13 +1,11 @@
 
 <div class="pt-20 px-48 bg-gray-300">
     <ng-container *ngIf="videos$ | async as videos">
-      <div class="relative bg-gray-200">
-        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-          <app-video-featured [video]="videos.newestVideo || null"></app-video-featured>
-        </div>
+      <div class="shadow-lg py-8 pl-4">
+        <app-video-featured [video]="videos.newestVideo || null"></app-video-featured>
       </div>
-      <div class="relative bg-white">
-        <main class="mx-auto max-w-7xl pb-8 pt-6 px-4 sm:px-6 lg:px-8">
+      <div class="bg-white">
+        <main class="p-6">
           <app-video-list [videos]="videos.videoList || null"></app-video-list>
         </main>
       </div>
