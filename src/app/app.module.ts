@@ -11,6 +11,7 @@ import { VideoListComponent } from './home/video-list/video-list.component';
 import { VideoFeaturedComponent } from './home/video-featured/video-featured.component';
 import { HomeBaseComponent } from './home/home-base/home-base.component';
 import { SafePipe } from './tools/safe.pipe';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SafePipe } from './tools/safe.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
