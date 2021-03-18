@@ -1,12 +1,12 @@
 
 <div class="flex mb-5">
     <div class="w-3/4">
-        <youtube-player videoId="{{video?.videoId}}"></youtube-player>
+        <app-yt-video-player [videoId]="video?.videoId" ></app-yt-video-player>
     </div>
     <div class="w-1/2">
         <div class="flex justify-between">
             <span class="font-semibold">{{ video?.title }}</span>
-            <span class="px-2 text-sm text-white bg-gray-700 rounded">
+            <span class="px-2 text-sm text-white bg-gray-700 shadow-lg">
                 {{ video?.publishedAt | date:'MMMM dd, yyyy' }}
             </span>
         </div>

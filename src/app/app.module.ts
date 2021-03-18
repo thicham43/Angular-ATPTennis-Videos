@@ -10,8 +10,8 @@ import { VideoItemComponent } from './home/video-item/video-item.component';
 import { VideoListComponent } from './home/video-list/video-list.component';
 import { VideoFeaturedComponent } from './home/video-featured/video-featured.component';
 import { HomeBaseComponent } from './home/home-base/home-base.component';
-import { SafePipe } from './tools/safe.pipe';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { YtVideoPlayerComponent } from './_shared/yt-video-player/yt-video-player.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     VideoListComponent,
     VideoFeaturedComponent,
     HomeBaseComponent,
-    SafePipe
+    YtVideoPlayerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,12 +1,12 @@
 
-<div class="flex py-2 px-20 mb-3 border-b-2 border-indigo-100">
+<div class="flex py-2 pl-20 mb-3 border-b-2 border-indigo-100 hover:shadow-inner">
     <div class="w-1/3">
         <img [src]="video?.thumbnailUrl" class="w-2/3 h-full">
     </div>
     <div class="w-2/3">
         <div class="flex justify-between">
             <span class="font-semibold">{{ video?.title }}</span>
-            <span class="px-2 text-sm text-white bg-gray-700 rounded">
+            <span class="px-2 text-sm text-white bg-gray-700 shadow-lg">
                 {{ video?.publishedAt | date:'MMMM dd, yyyy' }}
             </span>
         </div>
