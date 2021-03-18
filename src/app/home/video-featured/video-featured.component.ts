@@ -16,7 +16,7 @@ export class VideoFeaturedComponent implements OnInit {
 
   ngOnInit(): void {
     this.yt_player_src = 
-    `http://www.youtube.com/embed/${this.video?.videoId}?enablejsapi=1&origin=http://atp-tennis-videos.netlify.app`
+    `http://www.youtube.com/embed/${this.video?.videoId}?enablejsapi=1&origin=https://atp-tennis-videos.netlify.app`
   }
 
 }
