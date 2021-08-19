@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d28c713d-2302-4caf-a5e3-f86964de59e3/deploy-status)](https://app.netlify.com/sites/atp-tennis-videos/deploys)
+
 # ATP Tennis videos
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
